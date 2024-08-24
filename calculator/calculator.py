@@ -14,4 +14,4 @@ def calculator(sayi1, sayi2, islem):
     else:
         return  
         
-print(calculator())
+print(calculator(sa1, sa2, islem))
