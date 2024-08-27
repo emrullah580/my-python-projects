@@ -15,9 +15,3 @@ def calculator(sayi1, sayi2, islem):
         return sayi1 / sayi2
     else:
         return  
-        
-<<<<<<< HEAD
-print(calculator(sa1, sa2, islem))
-=======
-print(calculator(sa1, sa2, islem))
->>>>>>> 5795976e15ea5356e359f723ee50ec11c5ed0410
