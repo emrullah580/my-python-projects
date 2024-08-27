@@ -1,4 +1,3 @@
-# random module
 import random
 
 def guess_the_number():
