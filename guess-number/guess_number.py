@@ -7,5 +7,4 @@ def guess_the_number():
         guess_numbers = int(input("PLease enter an integer"))
         attempts += 1
         
-
 guess_the_number()
