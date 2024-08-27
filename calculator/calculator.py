@@ -10,6 +10,8 @@ def calculator(sayi1, sayi2, islem):
     elif islem=="3":
         return sayi1 * sayi2
     elif islem=="4":
+        if sayi2 == 0:
+            return
         return sayi1 / sayi2
     else:
         return  
