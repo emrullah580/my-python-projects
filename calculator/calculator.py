@@ -4,18 +4,16 @@ sa2 = int(input("İkinci sayiyi giriniz: "))
 
 def calculator(sayi1, sayi2, islem):
     if islem=="1":
-        print(sayi1+sayi2)
-        
+        return sayi1 + sayi2
     elif islem=="2":
-        print(sayi1-sayi2)
-        
+        return sayi1 - sayi2
     elif islem=="3":
-        print(sayi1*sayi2)
-        
+        return sayi1 * sayi2
     elif islem=="4":
-        print(sayi1/sayi2)
-        
+        if sayi2 == 0:
+            return
+        return sayi1 / sayi2
     else:
-        print("Geçersiz")   
+        return  
         
-calculator()
+print(calculator(sa1, sa2, islem))
