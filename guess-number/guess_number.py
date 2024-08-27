@@ -2,9 +2,7 @@
 import random
 
 def guess_the_number():
-    """
-    generate a random integer, then try to guess that number in up to three tries.
-    """
+    number = random.randint(1, 100)
     pass
 
 guess_the_number()
