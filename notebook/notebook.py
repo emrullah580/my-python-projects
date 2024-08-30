@@ -10,3 +10,14 @@ def New_Notes():
     new_notes=input("Add new notes: ")
     notes.append(new_notes)
 
+
+def add_notes(notes):
+    new_note = input("Enter your note here: ")
+    notes.append(new_note)
+    print("New note added successfully!")
+
+
+def main():
+    notes = []
+    display_menu()
+    add_notes(notes)
