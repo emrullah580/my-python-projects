@@ -1,9 +1,8 @@
 
-def menu():
-    print("1- Not Ekleyin ")
-    print("2- Not Silin ")
-    print("3- Notlariniza bakin ")
-    print("4- Programi Kapatin ")
-    
-    
-    
+def display_menu():
+    print("--Notebook Application--")
+    print("1-Add new notes")
+    print("2-See notes")
+    print("3-Delete notes")
+    print("4-Exit")
+
