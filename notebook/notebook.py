@@ -10,16 +10,6 @@ def add_notes(notes):
     new_note = input("Enter your note here: ")
     notes.append(new_note)
     print("New note added successfully!")
-    
-def see_notes(notes):
-    if notes:
-        for index, note in enumerate(notes, start=1):
-            print(f"{index-{note}}")
-            
-        else:
-            print("Şuana kadar not eklemediniz ")
-        
-
 
 def view_notes(notes):
     if notes:
@@ -27,9 +17,17 @@ def view_notes(notes):
             print(f"{index-{note}}")
     else:
         print("There no any notes, let's add some!")
+        
+def delete_notes(notes):
+    if notes:
+        view_notes(notes)
+
+    else:
+        print("")
 
 def main():
     notes = []
     display_menu()
+    
     
 
