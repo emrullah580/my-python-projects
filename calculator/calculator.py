@@ -1,19 +1,35 @@
-islem = input("1-Toplama", "2-Çikarma", "3-Çarpma", "4-Bölme")
-sa1 = int(input("Birinci sayiyi giriniz: "))
-sa2 = int(input("İkinci sayiyi giriniz: "))
 
-def calculator(sayi1, sayi2, islem):
-    if islem=="1":
-        return sayi1 + sayi2
-    elif islem=="2":
-        return sayi1 - sayi2
-    elif islem=="3":
-        return sayi1 * sayi2
-    elif islem=="4":
-        if sayi2 == 0:
-            return
-        return sayi1 / sayi2
-    else:
-        return  
+def calculator():
+    while True:
+        sa1 = int(input("Birinci sayiyi giriniz: "))
+        sa2 = int(input("İkinci sayiyi giriniz: "))
+        print("İşlem seçiniz: ")
+        print("1- Toplama")
+        print("2- Çikarma")
+        print("3- Çarpma")
+        print("4- Bölme")
+        print("exit")
+        liste = input("1, 2, 3, 4 veya exit ")
         
-print(calculator(sa1, sa2, islem))
+        if liste.lower()=="exit":
+            break
+    
+        if liste=="1":
+           print(sa1 + sa2) 
+           
+        elif liste=="2":
+            print(sa1 - sa2)
+            
+        elif liste=="3":
+            print(sa1 * sa2)
+            
+        elif liste=="4":
+            if sa2==0:
+                print("Hata!")
+                
+            else:
+                print(sa1 / sa2)
+                
+calculator()
+            
+        
