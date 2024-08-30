@@ -20,6 +20,5 @@ def guess_the_number():
             print("Tebrikler")
             break 
         
-     
-        
+   
 guess_the_number()
