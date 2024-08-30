@@ -21,7 +21,15 @@ def see_notes(notes):
         
 
 
+def view_notes(notes):
+    if notes:
+        for index, note in enumerate(notes, start=1):
+            print(f"{index-{note}}")
+    else:
+        print("There no any notes, let's add some!")
+
 def main():
     notes = []
     display_menu()
-    add_notes(notes)
+    
+
