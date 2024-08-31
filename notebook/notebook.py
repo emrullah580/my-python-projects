@@ -42,8 +42,21 @@ def delete_notes(notes_list):
 
 
 def main():
-    display_menu()
     notes = []
-
-
-main()
+    display_menu()
+    while True:
+        user_choice = input("Please enter an operation from the menu: (1, 2, 3, 4) ")
+        if user_choice == "1":
+            add_notes(notes)
+        elif user_choice == "2":
+            view_notes(notes)
+        elif user_choice == "3":
+            delete_notes(notes)
+        elif user_choice == "4":
+            print("Exit...")
+            break
+        else:
+            print("Invalid operation!")
+          
+    
+main()  
