@@ -45,7 +45,6 @@ def delete_notes(notes_list):
 def main():
     display_menu()
 
-    while
     notes = []
     user_choice = input("Hangisini seçmek istersiniz(1-2-3-4) ")
     if user_choice=="1":
