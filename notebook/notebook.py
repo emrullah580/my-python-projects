@@ -42,19 +42,19 @@ def delete_notes(notes_list):
 def main():
     display_menu()
 
+    while
     notes = []
-
     user_choice = input("Hangisini seçmek istersiniz(1-2-3-4) ")
-    if c=="1":
+    if user_choice=="1":
         add_notes(notes)
         
-    elif c=="2":
+    elif user_choice=="2":
         view_notes(notes)
         
-    elif c=="3":
+    elif user_choice=="3":
         delete_notes(notes)
         
-    elif c=="4":
+    elif user_choice=="4":
         return
     
     else:
