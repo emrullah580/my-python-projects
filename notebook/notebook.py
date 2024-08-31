@@ -18,8 +18,6 @@ def view_notes(notes):
     else:
         print("There no any notes, let's add some!")
         
-
-        
 def delete_notes(notes_list):
     if notes_list:
         try:
@@ -45,6 +43,22 @@ def delete_notes(notes_list):
 def main():
     notes = []
     display_menu()
+    c = input("Hangisini seçmek istersiniz(1-2-3-4) ")
+    if c=="1":
+        add_notes(notes)
+        
+    elif c=="2":
+        view_notes(notes)
+        
+    elif c=="3":
+        delete_notes(notes)
+        
+    elif c=="4":
+        return
     
+    else:
+        print("Hatali seçim ")
+          
     
+main()  
 
