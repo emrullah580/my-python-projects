@@ -40,6 +40,7 @@ def delete_notes(notes_list):
 
 
 def main():
+
     display_menu()
 
     notes = []
@@ -62,4 +63,3 @@ def main():
           
     
 main()  
-
