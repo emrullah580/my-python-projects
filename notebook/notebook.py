@@ -1,4 +1,3 @@
-
 def display_menu():
     print("--Notebook Application--")
     print("1-Add new notes")
@@ -6,24 +5,24 @@ def display_menu():
     print("3-Delete notes")
     print("4-Exit")
 
-def add_notes(notes):
-    new_note = input("Enter your note here: ")
-    notes.append(new_note)
+def add_notes(notes_list):
+    new_note = input("Write you note here: ")
+    notes_list.append(new_note)
     print("New note added successfully!")
 
-def view_notes(notes):
-    if notes:
-        for index, note in enumerate(notes, start=1):
-            print(f"{index-{note}}")
+
+def view_notes(notes_list):
+    if notes_list:
+        for index, note in enumerate(notes_list, start=1):
+            print(f"{index}-{note}")
     else:
         print("There no any notes, let's add some!")
-        
 def delete_notes(notes_list):
     if notes_list:
         try:
             view_notes(notes_list)
             deleting_index = int(input("Which note dou you want to delete: ")) - 1
-            if 0 < deleting_index < len(notes_list):
+            if 0 <= deleting_index < len(notes_list):
                 while True:
                     confirm = input("Are you sure you want to delete this note? (yes/no) ").lower()
                     if confirm != 'no':
@@ -41,9 +40,11 @@ def delete_notes(notes_list):
 
 
 def main():
-    notes = []
     display_menu()
-    c = input("Hangisini seçmek istersiniz(1-2-3-4) ")
+
+    notes = []
+
+    user_choice = input("Hangisini seçmek istersiniz(1-2-3-4) ")
     if c=="1":
         add_notes(notes)
         
