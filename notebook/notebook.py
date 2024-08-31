@@ -21,9 +21,18 @@ def view_notes(notes):
 def delete_notes(notes):
     if notes:
         view_notes(notes)
-
+        a = int(input("Kaç numarali notu silmek istersiniz: "))-1
+        if 0<a<len(notes):
+            while True:
+                b = input("Eminmisiniz(Evet/Hayir)").lower()
+                if b!="hayir":
+                    notes.pop(a)
+                    break
+                else:
+                    print("Silme işlemi iptal edildi ")
+                    break
     else:
-        print("")
+        print("Listede eleman yok")
 
 def main():
     notes = []
