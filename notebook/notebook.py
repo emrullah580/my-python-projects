@@ -44,7 +44,9 @@ def delete_notes(notes_list):
 
 def main():
     display_menu()
+
     notes = []
+
     while True:
         user_choice = input("Please enter an operation from the menu: (1, 2, 3, 4) ")
         if user_choice == "1":
@@ -62,3 +64,4 @@ def main():
 
 
 main()
+
