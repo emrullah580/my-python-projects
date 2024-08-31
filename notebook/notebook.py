@@ -5,6 +5,7 @@ def display_menu():
     print("3-Delete notes")
     print("4-Exit")
 
+
 def add_notes(notes_list):
     new_note = input("Write you note here: ")
     notes_list.append(new_note)
@@ -17,6 +18,8 @@ def view_notes(notes_list):
             print(f"{index}-{note}")
     else:
         print("There no any notes, let's add some!")
+
+
 def delete_notes(notes_list):
     if notes_list:
         try:
@@ -62,4 +65,3 @@ def main():
           
     
 main()  
-
