@@ -46,21 +46,22 @@ def main():
     display_menu()
 
     notes = []
-    user_choice = input("Hangisini seçmek istersiniz(1-2-3-4) ")
-    if user_choice=="1":
-        add_notes(notes)
-        
-    elif user_choice=="2":
-        view_notes(notes)
-        
-    elif user_choice=="3":
-        delete_notes(notes)
-        
-    elif user_choice=="4":
-        return
-    
-    else:
-        print("Hatali seçim ")
-          
-    
-main()  
+
+    while True:
+        user_choice = input("Please enter an operation from the menu: (1, 2, 3, 4) ")
+        if user_choice == "1":
+            add_notes(notes)
+        elif user_choice == "2":
+            view_notes(notes)
+        elif user_choice == "3":
+            delete_notes(notes)
+        elif user_choice == "4":
+            print("Exit...")
+            break
+        else:
+            print("Invalid operation!")
+
+
+
+main()
+
